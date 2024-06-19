@@ -128,8 +128,7 @@ textarea {
   /*  enumarate transitioning properties, including display */
   transition:
     transform 0.5s,
-    opacity 0.5s,
-    display 0.5s;
+    opacity 0.5s;
 }
 
 [popover]:popover-open {
@@ -140,9 +139,9 @@ textarea {
   right: 16px;
   bottom: 16px;
 }
-/* ::backdrop {
-  backdrop-filter: blur(3px);
-} */
+::backdrop {
+  /* backdrop-filter: blur(3px); */
+}
 
 
 .align-content {
