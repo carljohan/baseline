@@ -9,6 +9,16 @@ let uuid = 1;
 export const items = [
   {
     id: uuid++,
+    title: ":has() selector",
+    description:
+      "Select an element if it contains a matching element specified by its argument, allowing selection of parent or previous sibling elements based on a relative selector. ",
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS/:has",
+    component: Has,
+    baseline: "newly",
+    since: "December 2023",
+  },
+  {
+    id: uuid++,
     title: "Popover API",
     description:
       "Popover provides a standard, consistent, flexible mechanism for displaying popover content on top of other page content.",
@@ -47,16 +57,7 @@ export const items = [
     baseline: "newly",
     since: "May 2024",
   },
-  {
-    id: uuid++,
-    title: ":has() selector",
-    description:
-      "Select an element if it contains a matching element specified by its argument, allowing selection of parent or previous sibling elements based on a relative selector. ",
-    link: "https://developer.mozilla.org/en-US/docs/Web/CSS/:has",
-    component: Has,
-    baseline: "newly",
-    since: "December 2023",
-  },
+
   {
     id: uuid++,
     title: "Field-sizing",
