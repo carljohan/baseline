@@ -11,13 +11,3 @@
   {/if}
   <p class="text-sm">{description}</p>
 </article>
-
-<style>
-  article:has(img) {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-  article:has(img) h2 {
-    margin-top: 1rem;
-  }
-</style>

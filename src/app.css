@@ -79,3 +79,76 @@
 
 
 body { overflow-y: scroll; }
+
+article:has(img) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+article:has(img) h2 {
+  margin-top: 1rem;
+}
+
+.text-wrap-style {
+  /* not supported in chrome, must use shorthand `text-wrap` */
+  text-wrap-style: balance;
+}
+
+textarea {
+  width: 400px;
+  /* make the height at least 3 lines */
+  min-height: 3lh;
+}
+
+#field-sizing {
+  field-sizing: content;
+}
+
+[popover] {
+  &:popover-open {
+    /*   0. BEFORE-OPEN STATE   */
+    /*  initial state for what we're animating *in* from  */
+    @starting-style {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+
+    /*   1. OPEN STATE   */
+    /*  state when popover is open, BOTH:
+      what we're transitioning *in* to 
+      and transitioning *out* from */
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /*   2. AFTER-OPEN-IS-CLOSED STATE   */
+  /*  initial state for what we're animating *out* to */
+  opacity: 0;
+  transform: translateY(100%);
+
+  /*  enumarate transitioning properties, including display */
+  transition:
+    transform 0.5s,
+    opacity 0.5s,
+    display 0.5s;
+}
+
+[popover]:popover-open {
+  width: 200px;
+  position: absolute;
+  inset: unset;
+  margin: 0;
+  right: 16px;
+  bottom: 16px;
+}
+/* ::backdrop {
+  backdrop-filter: blur(3px);
+} */
+
+
+.align-content {
+  align-content: center;
+}
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -26,9 +26,3 @@
     *On iOS, only available on iPad, not on iPhone.
   </div>
 </div>
-
-<style>
-  :global(:fullscreen) {
-    background-color: pink;
-  }
-</style>

@@ -1,7 +1,7 @@
 import FieldSizing from "$lib/FieldSizing.svelte";
 import Popover from "$lib/Popover.svelte";
 import AlignContent from "$lib/AlignContent.svelte";
-import Fullscreen from "$lib/Fullscreen.svelte";
+// import Fullscreen from "$lib/Fullscreen.svelte";
 import TextBalance from "$lib/TextBalance.svelte";
 import Has from "$lib/Has.svelte";
 

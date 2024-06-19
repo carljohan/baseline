@@ -12,7 +12,7 @@
         <div id="item" class="size-8 bg-purple-500"></div>
       </div>
 
-      <div class="w-64 flex flex-col justify-center items-center gap-2">
+      <div class="w-64 flex flex-col justify-center items-center gap-2 pt-2">
         <div class="w-full flex items-center gap-2">
           <Switch
             id="center"
@@ -35,13 +35,3 @@
     </div>
   </div>
 </div>
-
-<style>
-  :global(.align-content) {
-    align-content: center;
-  }
-  :global(.margin-auto) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-</style>

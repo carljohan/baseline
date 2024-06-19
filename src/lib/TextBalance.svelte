@@ -22,7 +22,7 @@
       </div>
       <!-- Title with balance -->
       <div class="flex flex-col gap-4">
-        <h2 class="text-4xl text-balance">{input}</h2>
+        <h2 class="text-4xl text-balance text-wrap-style">{input}</h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
           perspiciatis impedit ipsum, laudantium vero quo nam obcaecati at.
@@ -33,10 +33,3 @@
     </div>
   </div>
 </div>
-
-<style>
-  .text-balance {
-    /* not supported in chrome, must use shorthand `text-wrap` */
-    text-wrap-style: balance;
-  }
-</style>

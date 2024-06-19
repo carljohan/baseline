@@ -6,30 +6,11 @@
   <div class="space-y-4">
     <div><Label for="without">Normal text area</Label></div>
 
-    <textarea id="without" class="border" />
+    <textarea id="without" class="border rounded-lg" />
   </div>
 
   <div class="space-y-4">
     <div><Label for="field-sizing">With field sizing</Label></div>
-    <textarea id="field-sizing" class="border" />
-  </div>
-  <div>
-    `field-sizing` property: <a
-      class="underline text-blue-500"
-      href="https://developer.mozilla.org/en-US/docs/Web/CSS/field-sizing"
-      >MDN</a
-    >
+    <textarea id="field-sizing" class="border rounded-lg" />
   </div>
 </div>
-
-<style>
-  textarea {
-    width: 400px;
-    /* make the height at least 3 lines */
-    min-height: 3lh;
-  }
-
-  #field-sizing {
-    field-sizing: content;
-  }
-</style>
