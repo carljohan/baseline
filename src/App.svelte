@@ -22,8 +22,14 @@
     class="h-full max-h-screen items-stretch"
   >
     <Resizable.Pane defaultSize={defaultLayout[0]} minSize={20}>
-      <div class="flex items-center px-4 py-3">
+      <div class="flex flex-col gap-1 px-4 py-3">
         <h1 class="text-xl font-bold">New baselines features</h1>
+        <p class="text-sm text-muted-foreground">
+          Baseline source:
+          <a class="text-blue-500 underline" href="https://webstatus.dev/"
+            >webstatus.dev</a
+          >
+        </p>
       </div>
       <Separator class="mb-4" />
 
