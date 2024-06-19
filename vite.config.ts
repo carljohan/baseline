@@ -5,7 +5,7 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [svelte()],
-
+  base: "/baseline/",
   resolve: {
     alias: {
       $lib: path.resolve("./src/lib"),
